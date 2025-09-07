@@ -1,0 +1,58 @@
+= Thermomètre
+
+== Contexte
+
+Vous travaillez pour une société qui développe des capteurs connectés destinés aux stations de ski. +
+Chaque matin, les capteurs envoient une série de températures relevées à différents endroits de la station (pistes, remontées mécaniques, chalets).
+
+Le service technique souhaite afficher sur leur monitoring la température la plus représentative qui est celle qui est la plus proche de zéro.
+
+Votre objectif est d’écrire le module qui prend en entrée une liste de températures et qui renvoie la température la plus proche de zéro selon les règles.
+
+
+== Règles
+
+- Retourner la température la plus proche de 0
+- Le nombre de températures transmises ne doit pas dépasser 10 000 valeurs maximum.
+- Si rien n'est fourni, 0 est renvoyé.
+- Si deux températures ont la même distance de Zero (comme 5 & -5), alors la température positive est retournée.
+
+
+== Exemples
+
+----
+Entrée : 2, 9, 1
+Sortie : 1
+----
+
+----
+Entrée : 2, 9, -1
+Sortie : -1
+----
+
+----
+Entrée :
+Sortie : 0
+----
+
+----
+Entrée : 2, 9, -2, -3
+Sortie : 2
+----
+
+
+== Technique
+
+Pour lancer un conteneur docker avec Bun js et de quoi faire des tests en typescript :
+
+[source,bash]
+----
+docker run -it --rm -v $(pwd):/app -w /app oven/bun:alpine sh
+----
+
+Pour exécuter les tests :
+
+[source,bash]
+----
+bun test --watch --coverage
+----
