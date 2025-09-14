@@ -1,0 +1,9 @@
+services:
+  env-php:
+    image: info3/r5a08
+    build: ./
+    container_name: fizz-buzz
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/app
