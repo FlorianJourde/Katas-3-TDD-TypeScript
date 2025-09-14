@@ -5,7 +5,8 @@ Training in TDD using Jest and TypeScript.
 https://github.com/qatium/kata-ts.git
 https://github.com/marcjmiller/typescript-tdd-kata
 
-# Entrainement au Test Driven Development - https://github.com/gabbloquet/entrainement-au-tdd/tree/master
+# Entrainement au Test Driven Development
+Lien : https://github.com/gabbloquet/entrainement-au-tdd/tree/master
 
 Oui c'est en Français ! (Et c'est voulu :D)  
 Ce repository a pour but de s'exercer au test driven development à travers des exemples (katas), qui, je l'espère, sauront vous divertir.
