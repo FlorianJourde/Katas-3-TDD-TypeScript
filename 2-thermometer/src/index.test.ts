@@ -1,7 +1,7 @@
 import {thermometer} from "./index"
 
-describe("Thermometer", () => {
-    it("returns 0 if empty array provided", () => {
+describe('Thermometer', () => {
+    it('returns 0 if empty array provided', () => {
         // Arrange
         const values: number[] = [];
 
@@ -12,7 +12,7 @@ describe("Thermometer", () => {
         expect(result).toEqual(0);
     })
 
-    it("returns 0 if no array provided", () => {
+    it('returns 0 if no array provided', () => {
         const values: undefined = undefined;
 
         const result = thermometer(values);
